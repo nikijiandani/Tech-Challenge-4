@@ -2,6 +2,14 @@ body {
 	font-family: 'Raleway', sans-serif;
 	background: #FFFFFF;
 }
+body time {
+	font-family: 'Noto Serif', serif;
+	font-size: 0.8em;
+}
+body p {
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
 nav {
 	background: #F6F7F9;
 	display: flex;
@@ -23,7 +31,7 @@ nav a {
 nav a:hover {
 	font-weight: 900;
 }
-ul{
+header ul{
 	list-style-type: none;
 	display: flex;
 	justify-content: space-evenly;
@@ -33,8 +41,32 @@ ul{
 h2 {
 	text-align: center;
 }
-h4 {
+footer h4 {
+	margin-bottom: 0;
+}
+footer {
+	color: #FFFFFF;
+}
+footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+footer p {
+	margin-top: 0.5em;
+}
+input::placeholder {
+	font-family: 'Noto Serif', serif;
+	font-style: italic;
 	text-align: center;
+	font-size: 1.8em;
+}
+input[type=email] {
+	height: 4em;
+	width: 25vw;
+}
+input[type=submit] {
+	height: 4em;
+	width: 12vw;
 }
 .box img {
 	width: 100%;
@@ -74,7 +106,7 @@ h4 {
 }
 .center {
 	text-align: center;
-	padding-bottom: 2em;
+	padding-bottom: 1.8em;
 }
 .logo {
 	font-size: 30px;
@@ -84,7 +116,6 @@ h4 {
 .main {
 	background: url("assets/image-1.jpg") no-repeat;
 	background-size: 100%;
-	padding-bottom: 3vw;
 }
 .blog {
 	background-color: #FFFFFF;
@@ -98,7 +129,7 @@ h4 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 2em;
-	padding: 0 10vw;
+	padding: 2vw 10vw;
 }
 .right {
 	grid-column: 3/4;
@@ -115,19 +146,29 @@ h4 {
 .left img {
 	width: 100%;
 }
+.foot {
+	background: #241F1F;
+}
 .wrapper {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 }
 .container {
-	display: grid;
-	grid-template-rows: 1fr 2fr 1fr;
+	display: flex;
+	flex-direction: column;
 }
-#selected {
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 3vw 10vw;
+	background: #444444;
+}
+.selected {
 	font-weight: 900;
 }
 #item {
 	background-color: rgba(253, 252, 252, 0.9);
-/*	height: 41%;*/
 	width: 62%;
 	margin: 14% auto;
 	padding-top: 6vw;
@@ -137,19 +178,39 @@ h4 {
 #item h1 {
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 3vw;
+	font-size: 2.5vw;
 	margin: 0;
 }
 #item p {
 	text-align: center;
 	margin-top: 0;
+	margin-bottom: 0;
 	padding-left: 6vw;
 	padding-right: 6vw;
-	font-size: 1.5vw;
+	font-size: 1.3vw;
+	font-weight: 500;
 }
 #related {
 	background: #F6F7F9;
-	padding: 0 10vw;
+	padding: 2vw 10vw;
+}
+#left {
+	flex-shrink: 2.1;
+}
+#right {
+	flex-shrink: 1.3;
+}
+#middle ul {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	text-transform: uppercase;
+	flex-direction: column;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+#middle ul li {
+	padding: 0.3em;
 }
 @media (max-width: 990px) {
 	nav {
