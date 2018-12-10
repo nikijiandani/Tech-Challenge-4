@@ -5,9 +5,8 @@ html,body {
 	margin: 0;
 	padding: 0;
 }
-body time {
+main time {
 	font-family: 'Noto Serif', serif;
-	font-size: 0.8em;
 }
 body p {
 	font-size: 0.8em;
@@ -46,6 +45,16 @@ h2 {
 }
 h4 {
 	letter-spacing: 1px;
+	margin-bottom: 0.2em;
+}
+button {
+    background: #F60000;
+    height: 4em;
+    width: 15vw;
+    border: 0;
+    color: #FFBBC2;
+    margin: 0;
+    padding: 0;
 }
 footer {
 	color: #FFFFFF;
@@ -125,6 +134,12 @@ article img {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-column-gap: 2em;
 }
+.related p {
+	margin-top: 0.4em;
+}
+.related time {
+	font-size: 0.8em;
+}
 .blog {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -133,11 +148,20 @@ article img {
 	background-color: #FFFFFF;
 /*	align-items: baseline;*/
 }
+.blog p {
+	margin-top: 0.4em;
+}
+.blog time {
+	font-size: 0.8em;
+}
 .right {
 	grid-column: 3/4;
 }
 .right img {
 	width: 100%;
+}
+.right p {
+	margin-top: 0;
 }
 .left {
 	grid-column: 1/3;
@@ -154,6 +178,9 @@ article img {
 	justify-content: space-between;
 	align-items: baseline;
 	padding: 0 10vw;
+}
+.foot h4 {
+	margin-bottom: 1.33em;
 }
 .wrapper {
 	display: flex;
@@ -182,7 +209,6 @@ article img {
 	margin: 14% auto;
 	padding-top: 6vw;
 	padding-bottom: 6vw;
-	display: grid;
 }
 #item h1 {
 	text-transform: uppercase;
@@ -206,9 +232,9 @@ article img {
 #left {
 	flex-shrink: 1.6;
 }
-/*#right {
-	flex-shrink: 1.3;
-}*/
+#margin {
+	margin-top: 1vw;
+}
 #middle ul {
 	list-style-type: none;
 	display: flex;
@@ -220,15 +246,6 @@ article img {
 }
 #middle ul li {
 	padding: 0.3em;
-}
-button {
-    background: #F60000;
-    height: 4em;
-    width: 15vw;
-    border: 0;
-    color: #FFBBC2;
-    margin: 0;
-    padding: 0;
 }
 @media (max-width: 990px) {
 	nav {
