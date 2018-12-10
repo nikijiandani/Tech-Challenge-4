@@ -1,6 +1,9 @@
-body {
+/*TO GET RID OF WHITESPACE ON THE BODY*/
+html,body {
 	font-family: 'Raleway', sans-serif;
 	background: #FFFFFF;
+	margin: 0;
+	padding: 0;
 }
 body time {
 	font-family: 'Noto Serif', serif;
@@ -20,7 +23,6 @@ nav {
 	overflow: hidden;
 	top: 0;
 	left: 0;
-	/*position: absolute;*/
 }
 nav a {
 	text-decoration: none;
@@ -63,10 +65,6 @@ input::placeholder {
 input[type=email] {
 	height: 4em;
 	width: 25vw;
-}
-input[type=submit] {
-	height: 4em;
-	width: 12vw;
 }
 .box img {
 	width: 100%;
@@ -146,8 +144,19 @@ input[type=submit] {
 .left img {
 	width: 100%;
 }
+.foot ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-evenly;
+	width: 40%;
+	flex-wrap: wrap;
+}
 .foot {
 	background: #241F1F;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 3vw 10vw;
 }
 .wrapper {
 	display: flex;
@@ -211,6 +220,14 @@ input[type=submit] {
 }
 #middle ul li {
 	padding: 0.3em;
+}
+#right button {
+    background: #F60000;
+    height: 4.5em;
+    width: 15vw;
+    border: 1px solid #F60000;
+    color: #FFBBC2;
+    padding: 0;
 }
 @media (max-width: 990px) {
 	nav {
