@@ -30,6 +30,26 @@ ul{
 	width: 40%;
 	flex-wrap: wrap;
 }
+h2 {
+	text-align: center;
+}
+.box img {
+	width: 100%;
+}
+.box p {
+	padding: 0 2vw;
+}
+.box a {
+	text-decoration: none;
+	color: #F60000;
+	font-size: 0.75em;
+	font-weight: 900;
+}
+.box {
+	background: #FFFFFF;
+	text-align: center;
+	padding-bottom: 1.5em;
+}
 .logo {
 	font-size: 30px;
 	font-weight: bold;
@@ -37,33 +57,29 @@ ul{
 }
 .main {
 	background: url("assets/image-1.jpg") no-repeat;
-	/*width: 100%;*/
-	/*left: 0;*/
-	/*height: 60vw;*/
 	background-size: 100%;
-/*	margin-top: 40px;*/
 }
 .blog {
 	background-color: red;
 }
 .related {
-	background-color: blue;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 2em;
 }
 .wrapper {
 	display: grid;
 }
 .container {
 	display: grid;
-	/*grid-template-columns: 1fr 1fr 1fr;*/
 	grid-template-rows: 1fr 2fr 1fr;
-	grid-gap: 2em;
 }
 #selected {
 	font-weight: 900;
 }
 #item {
 	background-color: rgba(253, 252, 252, 0.9);
-	height: 41%;
+/*	height: 41%;*/
 	width: 62%;
 	margin: 14% auto;
 	padding-top: 6vw;
@@ -82,6 +98,10 @@ ul{
 	padding-left: 6vw;
 	padding-right: 6vw;
 	font-size: 1.5vw;
+}
+#related {
+	background: #F6F7F9;
+	padding: 4vw 10vw 0 10vw;
 }
 @media (max-width: 990px) {
 	nav {
