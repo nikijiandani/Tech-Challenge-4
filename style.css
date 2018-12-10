@@ -158,9 +158,15 @@ article img {
 	width: 40%;
 	flex-wrap: wrap;
 }
+.foot h4 {
+	padding-top: 0;
+}
 .foot {
 	background: #241F1F;
 	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 0 10vw;
 }
 .wrapper {
 	display: flex;
