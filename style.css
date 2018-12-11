@@ -19,6 +19,7 @@ nav {
 	flex-wrap: wrap;
 	width: 100%;
 	margin:0 auto;
+	padding-top: 4px;
 	overflow: hidden;
 	top: 0;
 	left: 0;
@@ -238,6 +239,7 @@ article img {
 }
 #left {
 	flex-shrink: 1.6;
+	padding-right: 2px;
 }
 #margin {
 	margin-top: 1vw;
