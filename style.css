@@ -282,6 +282,7 @@ article img {
 	}
 	.related {
 		grid-template-columns: 1fr 1fr;
+		grid-gap: 2em; 
 	}
 	.footer {
 		flex-wrap: wrap;
@@ -298,6 +299,21 @@ article img {
 		flex-direction: column;
 		align-items: center;
 		padding: 0;
+	}
+	#left {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+	.blog {
+		display: flex;
+		flex-direction: column;
+	}
+	.left {
+		display: flex;
+		flex-direction: column;
+	}
+	.related {
+		display: flex;
+		flex-direction: column;
 	}
 }
 
