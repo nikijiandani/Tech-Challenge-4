@@ -300,9 +300,6 @@ article img {
 		align-items: center;
 		padding: 0;
 	}
-	#left {
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	}
 	.blog {
 		display: flex;
 		flex-direction: column;
@@ -314,6 +311,15 @@ article img {
 	.related {
 		display: flex;
 		flex-direction: column;
+	}
+	.main {
+		margin-bottom: 0;
+	}
+	.center {
+		margin: 2vw;
+	}
+	#item {
+		margin-bottom: 0;
 	}
 }
 
