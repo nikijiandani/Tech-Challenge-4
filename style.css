@@ -58,6 +58,9 @@ button {
     padding-bottom: 8px;
     font-size: 12px;
 }
+button:hover {
+	text-decoration: underline;
+}
 footer {
 	color: #FFFFFF;
 }
