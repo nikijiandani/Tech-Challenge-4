@@ -208,8 +208,15 @@ article img {
 .icons a {
 	padding: 0.5vw;
 }
+.bold:hover {
+	text-decoration: underline;
+}
 #email {
 	flex-grow: 1.5;
+}
+#about {
+	text-align: center;
+	padding-bottom: 1em;
 }
 #button {
 	flex-grow: 1;
